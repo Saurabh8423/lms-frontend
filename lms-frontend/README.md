@@ -79,7 +79,7 @@ npm i -D eslint-plugin-simple-import-sort
 ```
 plugins: ['react-refresh', 'simple-import-sort'],
 ```
-4. To enable auro import sort on file save in vccode
+4. To enable auto import sort on file save in vscode
 
 -Opne `setting.json` (Settings option - setting- search seting than find the Edit in seeting.json click)
 - add the follong config
