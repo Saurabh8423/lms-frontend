@@ -28,7 +28,7 @@ function HomeLayout({ children }) {
         const drawerSide = document.getElementsByClassName("drawer-side");
         drawerSide[0].style.width = '0';
     }
-
+ 
     function handleLogout(e) {
         e.preventDefault();
 
