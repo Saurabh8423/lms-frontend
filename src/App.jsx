@@ -8,6 +8,7 @@ import Signup from "./Pages/Signup";
 import store from "./Redux/store";
 import CourseList from "./Pages/Course/CourseList";
 import Contact from "./Pages/Contact";
+import Denied from "./Pages/Denied";
 
 function App() {
   return (
@@ -17,8 +18,11 @@ function App() {
         <Route path="/about" element={<AboutUs />} />
         <Route path="/courses" element={<CourseList />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/denied" element={<Denied />} />
+
         <Route path="/signup" element={<Signup />} />
         <Route path="/login" element={<Login />} />
+
         <Route path="*" element={<NotFound />} />
       </Routes>
     </Provider>
