@@ -13,7 +13,7 @@ function Signup() {
     const dispatch = useDispatch();
     const navigate = useNavigate();
 
-
+    
     const [previewImage, setPreviewImage] = useState("");
 
     const [signupData, setSignupData] = useState({
@@ -155,7 +155,7 @@ function Signup() {
                         />
                     </div>
 
-                    <button type="submit" className='mt-2 bg-yellow-600 hover:bg-yellow-500 transition-all ease-in-out duration-300  py-2 font-semibold text-lg cursor-pointer rounded-[8px]'>
+                    <button type="submit" className='mt-2 bg-yellow-600 hover:bg-yellow-500 transition-all ease-in-out duration-300 rounded-sm py-2 font-semibold text-lg cursor-pointer'>
                         Create account
                     </button>
 

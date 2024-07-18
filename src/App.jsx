@@ -1,4 +1,4 @@
-import { Provider } from "react-redux"; // Import Provider from react-redux
+import { Provider } from "react-redux";
 import { Route, Routes } from "react-router-dom";
 import AboutUs from "./Pages/AboutUs";
 import HomePage from "./Pages/HomePage";
