@@ -36,7 +36,7 @@ function App() {
 
         <Route element={<RequireAuth allowedRoles={["ADMIN", "USER"]} />}>
           <Route path='/user/profile' element={<Profile />} />
-          <Route path='/user/editprofile' element={<EditProfile />} 
+          <Route path='/user/editprofile' element={<EditProfile />} />
         </Route>
 
         <Route path="*" element={<NotFound />} />
