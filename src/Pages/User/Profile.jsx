@@ -5,7 +5,7 @@ import HomeLayout from "../../Layouts/HomeLayout";
 import { getUserData } from "../../Redux/Slices/AuthSlice";
 import { cancelCourseBundle } from "../../Redux/Slices/RazorpaySlice";
 
-function Profile() {
+function Profile(){
 
     const dispatch = useDispatch();
 
