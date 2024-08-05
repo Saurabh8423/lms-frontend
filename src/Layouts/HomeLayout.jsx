@@ -38,8 +38,8 @@ function HomeLayout({ children }) {
     }
 
     return (
-        <div className="min-h-[90vh] border border-red-500">
-            <div className="drawer absolute left-0 z-50 w-fit border border-red-500">
+        <div className="min-h-[90vh]">
+            <div className="drawer absolute left-0 z-50 w-fit">
                 <input className="drawer-toggle" id="my-drawer" type="checkbox" />
                 <div className="drawer-content">
                     <label htmlFor="my-drawer" className="cursor-pointer relative">
@@ -50,7 +50,7 @@ function HomeLayout({ children }) {
                         />
                     </label>
                 </div>
-                <div className="drawer-side w-0 border border-red-500">
+                <div className="drawer-side w-0">
                     <label htmlFor="my-drawer" className="drawer-overlay">
                     </label>
                     <ul className="menu p-4 w-48 h-[100%] sm:w-80 bg-base-200 text-base-content relative">

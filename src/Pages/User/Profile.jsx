@@ -5,12 +5,10 @@ import HomeLayout from "../../Layouts/HomeLayout";
 import { getUserData } from "../../Redux/Slices/AuthSlice";
 import { cancelCourseBundle } from "../../Redux/Slices/RazorpaySlice";
 
-function Profile(){
+function Profile() {
 
     const dispatch = useDispatch();
-
     const navigate = useNavigate();
-
     const userData = useSelector((state) => state?.auth?.data);
 
     async function handleCancellation() {
@@ -20,7 +18,7 @@ function Profile(){
         toast.success("Cancellation completed!");
         navigate("/");
 
-
+    }
     return (
         <HomeLayout>
             <div className="min-h-[90vh] flex items-center justify-center">
