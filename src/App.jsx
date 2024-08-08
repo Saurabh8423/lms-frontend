@@ -1,29 +1,32 @@
-import { Provider } from "react-redux";
+import './App.css';
+
+// import { Provider } from "react-redux";
 import { Route, Routes } from "react-router-dom";
+
+import RequireAuth from "./Components/Auth/RequireAuth";
 import AboutUs from "./Pages/AboutUs";
+import Contact from "./Pages/Contact";
+import CourseDescription from "./Pages/Course/CourseDescription";
+import CourseList from "./Pages/Course/CourseList";
+import CreateCourse from "./Pages/Course/CreateCourse";
+import AddLecture from "./Pages/Course/Dashboard/Addlecture";
+import AdminDashboard from "./Pages/Course/Dashboard/AdminDashboard";
+import Displaylectures from "./Pages/Course/Dashboard/Displaylectures";
+import Denied from "./Pages/Denied";
 import HomePage from "./Pages/HomePage";
 import Login from "./Pages/Login";
 import NotFound from "./Pages/NotFound";
-import Signup from "./Pages/Signup";
-import store from "./Redux/store";
-import CourseList from "./Pages/Course/CourseList";
-import Contact from "./Pages/Contact";
-import Denied from "./Pages/Denied";
-import CourseDescription from "./Pages/Course/CourseDescription";
-import RequireAuth from "./Components/Auth/RequireAuth";
-import CreateCourse from "./Pages/Course/CreateCourse";
-import Profile from "./Pages/User/Profile";
-import EditProfile from "./Pages/User/EditProfile";
 import Checkout from "./Pages/Payment/Checkout";
-import CheckoutSuccess from "./Pages/Payment/CheckoutSuccess";
 import CheckoutFailure from "./Pages/Payment/CheckoutFailure";
-import Displaylectures from "./Pages/Course/Dashboard/Displaylectures";
-import AddLecture from "./Pages/Course/Dashboard/Addlecture";
-import AdminDashboard from "./Pages/Course/Dashboard/AdminDashboard";
+import CheckoutSuccess from "./Pages/Payment/CheckoutSuccess";
+import Signup from "./Pages/Signup";
+import EditProfile from "./Pages/User/EditProfile";
+import Profile from "./Pages/User/Profile";
+// import store from "./Redux/store";
 
 function App() {
   return (
-    <Provider store={store}>
+    <>
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/about" element={<AboutUs />} />
@@ -51,10 +54,10 @@ function App() {
           <Route path='/course/displaylectures' element={<Displaylectures />}/>
         </Route>
 
-        <Route path="*" element={<NotFound />} />
+        <Route path="*" element={<NotFound />}></Route>
       </Routes>
-    </Provider>
-  );
+    </>
+  )
 }
 
 export default App;
